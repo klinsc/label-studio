@@ -63,3 +63,17 @@ services:
       - ${POSTGRES_DATA_DIR:-./postgres-data}:/var/lib/postgresql/data
       - ./deploy/pgsql/certs:/var/lib/postgresql/certs:ro
 
+  ml:
+    stdin_open: true
+    tty: true
+    build: .
+    image: klinsc/label-studio-ml:latest
+    restart: unless-stopped
+    expose:
+      - 9090
+    depends_on:
+      - app
+    # environment:
+    #   - DATA_DIR=../label-studio-ml/data
+    volumes:
+      - ./mydata:/label-studio/data:rw
