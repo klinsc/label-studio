@@ -3,8 +3,8 @@ title: Manage projects in Label Studio Enterprise
 short: Project management
 tier: enterprise
 type: guide
-order: 115
-order_enterprise: 103
+order: 0
+order_enterprise: 60
 meta_title: Manage Role-Based Access Control in Label Studio
 meta_description: Manage access and set up permissions with user roles, organizations, and project workspaces for your projects in Label Studio Enterprise.
 section: "Project & Team Management"
@@ -121,7 +121,7 @@ As an **Organization Admin** and **Reviewer** in Label Studio UI, you can do the
 - View projects by workspace, including projects that you and other administrators have pinned.
 
 !!! note
-If there are no available pinned projects, all other projects will display.
+    If there are no available pinned projects, all other projects will display.
 
 As an **Annotator** in Label Studio UI, you can do the following:
 
@@ -142,7 +142,8 @@ To pin or unpin projects:
 
 3. Click **Pin project** to pin your projects.
 
-!!! note - When you pin a project, a message (for example, `New Project was pinned`) is displayed at the bottom of the page to confirm that your project is pinned. - Click **Undo** near the message to undo this action.
+!!! note
+    When you pin a project, a message (for example, `New Project was pinned`) is displayed at the bottom of the page to confirm that your project is pinned. - Click **Undo** near the message to undo this action.
 
 4. To filter and display only the pinned projects, click **Pinned projects** on the top-right side drop-down list.
 
@@ -156,6 +157,45 @@ Now, you can see all the pinned projects only.
 
 6. To view all the projects (both the **Pinned** and **Unpinned** projects), click **All projects** on the top-right side drop-down list.
 
+### Search projects
+
+Use the search box to search for projects by name. This allows partial and case-insensitive matches. The search is performed as you type, and the results are displayed in the project list. For example, if you type `new` in the search box, you will see projects with names such as `New Project`, `New Project 2`, and `New Project 3`.
+
+1. Search for a project by name in a workspace.
+
+  <br>
+  <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/search-projects-in-workspace.png" style="opacity: 0.8"/></div>
+  <i>Figure 12: Search projects within a workspace.</i>
+
+2. To search for a project by name in all workspaces, click **All Projects** from the left navigation pane.
+
+  <br>
+  <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/search-projects-in-all-workspaces.png" style="opacity: 0.8"/></div>
+  <i>Figure 13: Search projects in all workspaces.</i>
+   
+3. To clear the search results, click the `x` icon in the Search box.
+
+  <br>
+  <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/search-clear-results.png" style="opacity: 0.8"/></div>
+  <i>Figure 14: Clear search results.</i>
+
+4. Searching for pinned, or unpinned projects just requires selection of `Pinned projects` or `Unpinned projects` from the adjacent dropdown selection.
+
+  <br>
+  <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/search-pinned-projects.png" style="opacity: 0.8"/></div>
+  <i>Figure 15: Search pinned projects.</i>
+
+  <br>
+  <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/search-unpinned-projects.png" style="opacity: 0.8"/></div>
+  <i>Figure 16: Search unpinned projects.</i>
+   
+5. In the event of no results found for the search and filter criteria you will be presented with a message indicating that no results were found and allowed to create a new project or update the search criteria.
+
+  <br>
+  <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/search-criteria-no-results.png" style="opacity: 0.8"/></div>
+  <i>Figure 17: No matching results for search criteria.</i>
+    
+
 #### Duplicate a project
 
 The **Duplicate project** feature allows you to duplicate projects to a target workspace optionally importing the settings, tasks, and annotations. Duplicate a project by using the Project’s settings or Project card’s more menu (three dots **...**).
@@ -165,7 +205,7 @@ To duplicate a project:
 - Navigate to your workspace page to see the project card with the three dots (**...**) and click **Duplicate project**.
   <br>
   <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/duplicate-project.png" style="opacity: 0.8"/></div>
-  <i>Figure 16: Duplicate project button.</i>
+  <i>Figure 18: Duplicate project button.</i>
 
 - When duplicating, a pop-up window appears. Now, you can choose a destination workspace for a newly duplicated project using the following options:
 
@@ -175,16 +215,16 @@ To duplicate a project:
 
     <br>
     <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/duplicate-options-settings.png" style="opacity: 0.8"/></div>
-    <i>Figure 17: Duplicate project options.</i>
+    <i>Figure 19: Duplicate project options.</i>
 
 - When choosing the last option, you also can choose if you would like to make annotations **Ground Truth** or not. In the **Duplicate** window, you can also give duplicated project new name and description.
 
     <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/save-duplicate-project.png" style="opacity: 0.8"/></div>
-    <i>Figure 18: Select the location to save your duplicate project.</i>
+    <i>Figure 20: Select the location to save your duplicate project.</i>
 
 - Finally, the duplicated project is created.
     <div style="margin:auto; text-align:center;"><img class="gif-border" src="/images/created-a-duplicated-project.png" style="opacity: 0.8"/></div>
-    <i>Figure 19: Create a duplicate project.</i>
+    <i>Figure 21: Create a duplicate project.</i>
 
 ### Working with Archived Workspaces
 

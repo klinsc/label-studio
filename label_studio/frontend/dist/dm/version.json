@@ -1,6 +1,6 @@
 {
-  "message": "fix: LSDV-4620-3: Fix Richtext performance and functional",
-  "commit": "b4e2ddbc428bfd112a2dc6b2f7098ccca2a231b4",
+  "message": "fix: DIA-739: [FE] User is not able to update similarity range if filter is applied",
+  "commit": "93aaec64a11d0a57a0b9baf3074f7d3dab386da0",
   "branch": "master",
-  "date": "2023/07/19 23:38:47"
+  "date": "2023-12-01T06:12:20Z"
 }
